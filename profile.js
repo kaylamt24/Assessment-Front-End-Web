@@ -1,5 +1,6 @@
 console.log('hello world')
 
+const goat = document.querySelector('form');
 
 
 const faveColor = (event) => {
@@ -23,12 +24,17 @@ const faveRitual = (event) => {
     alert("Crying on Monday's")
 }
 
+const formSubmit = (event) => {
+    event.preventDefault();
+
+    alert('If you chose anything other than 8, we need to rethink your life choices')
+}
 
 
 color.addEventListener('click', faveColor)
 place.addEventListener('click', favePlace)
 ritual.addEventListener('click', faveRitual)
-
+goat.addEventListener('submit', formSubmit)
 
 
 
